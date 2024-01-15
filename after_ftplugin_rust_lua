@@ -16,3 +16,4 @@ vim.keymap.set("n", "<leader>lP", function() vim.cmd.RustLsp('parentModule') end
 vim.keymap.set("n", "<leader>lP", function() vim.cmd.RustLsp('parentModule') end, { buffer = bufnr, desc = "parent module" })
 vim.keymap.set("n", "<leader>lj", function() vim.cmd.RustLsp('joinLines') end, { buffer = bufnr, desc = "join lines" })
 vim.keymap.set("n", "<leader>lf", function() vim.cmd.RustLsp('flyCheck') end, { buffer = bufnr, desc = "fly check" })
+vim.keymap.set("n", "gd", function () vim.lsp.buf.definition() end, { buffer = bufnr, desc = "goto definition" })
